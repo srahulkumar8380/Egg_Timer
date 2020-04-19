@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    >
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/seekBar"
+        android:id="@+id/image_egg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@raw/egg"
+        >
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/timer_textView"
+        android:text="@string/timer_value"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <LinearLayout
+        android:layout_below="@+id/timer_textView"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/controlButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Go"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:onClick="controlTimer"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:onClick="Reset"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
